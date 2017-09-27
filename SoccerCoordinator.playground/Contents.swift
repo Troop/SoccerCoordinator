@@ -102,7 +102,6 @@ var dragonsTeam : [[String : Any]] = []
 var raptorsTeam : [[String : Any]] = []
 
 
-
 //ORGANISING PLAYERS
 for numb in playersList
 {
@@ -120,14 +119,58 @@ for numb in playersList
     }
 }
 
-//ADDING PLAYERS
+//ADDING EXPERIENCE PLAYERS
 for numb in experiencedPlayers
 {
-    if sharkTeam.capacity <= numberOfTeams
+    if (sharkTeam.count < numberOfTeams)
     {
-        sharkTeam.append(experiencedPlayers)
+        sharkTeam.append(numb)
+    }
+    else if(sharkTeam.count == numberOfTeams && dragonsTeam.count < numberOfTeams)
+    {
+        dragonsTeam.append(numb)
+    }
+    else
+    {
+        raptorsTeam.append(numb)
     }
 }
+//ADDING INEXPERIENCE PLAYERS
+for numb in rookiePlayers
+{
+    if (sharkTeam.count < playersList.count/numberOfTeams)
+    {
+        sharkTeam.append(numb)
+    }
+    else if(sharkTeam.count == playersList.count/numberOfTeams && dragonsTeam.count < playersList.count/numberOfTeams)
+    {
+        dragonsTeam.append(numb)
+    }
+    else
+    {
+        raptorsTeam.append(numb)
+    }
+}
+//ENVIAR FORMULARIO
+let dragonPractiseTime : [String : String] = ["team" : "Team Dragons","date" : "March 17, 1PM"]
+let sharkPractiseTime : [String : String] = ["team" : "Team Sharks","date" : "March 17, 3PM"]
+let raptorsPractiseTime : [String : String] = ["team" : "Team Raptors","date" : "March 18, 1PM"]
 
+var letter: [String] = []
 
-
+for teamPlayer in dragonsTeam
+{
+   letter.append("Dear ,\(teamPlayer["GuardianName"]), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(dragonPractiseTime["team"]), and he will have practise on, \(String(describing: dragonPractiseTime["date"])),")
+}
+for teamPlayer in sharkTeam
+{
+    letter.append("Dear ,\(teamPlayer["GuardianName"]), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(sharkPractiseTime["team"]), and he will have practise on, \(sharkPractiseTime["date"]),")
+}
+for teamPlayer in raptorsTeam
+{
+    letter.append("Dear ,\(teamPlayer["GuardianName"]), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(raptorsPractiseTime["team"]), and he will have practise on, \(raptorsPractiseTime["date"]),")
+}
+for lette in letter
+{
+    print(lette)
+}
