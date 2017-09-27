@@ -160,15 +160,15 @@ var letter: [String] = []
 
 for teamPlayer in dragonsTeam
 {
-   letter.append("Dear ,\(teamPlayer["GuardianName"]), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(dragonPractiseTime["team"]), and he will have practise on, \(String(describing: dragonPractiseTime["date"])),")
+   letter.append("Dear ,\(String(describing: teamPlayer["GuardianName"])), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(String(describing: dragonPractiseTime["team"])), and he will have practise on, \(String(describing: dragonPractiseTime["date"])),")
 }
 for teamPlayer in sharkTeam
 {
-    letter.append("Dear ,\(teamPlayer["GuardianName"]), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(sharkPractiseTime["team"]), and he will have practise on, \(sharkPractiseTime["date"]),")
+    letter.append("Dear ,\(String(describing: teamPlayer["GuardianName"])), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(String(describing: sharkPractiseTime["team"])), and he will have practise on, \(String(describing: sharkPractiseTime["date"])),")
 }
 for teamPlayer in raptorsTeam
 {
-    letter.append("Dear ,\(teamPlayer["GuardianName"]), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(raptorsPractiseTime["team"]), and he will have practise on, \(raptorsPractiseTime["date"]),")
+    letter.append("Dear ,\(String(describing: teamPlayer["GuardianName"])), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(String(describing: raptorsPractiseTime["team"])), and he will have practise on, \(String(describing: raptorsPractiseTime["date"])),")
 }
 for lette in letter
 {
