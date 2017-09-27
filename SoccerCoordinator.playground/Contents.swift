@@ -121,11 +121,11 @@ for numb in playersList
 }
 
 //ADDING PLAYERS
-for numb in playersList
+for numb in experiencedPlayers
 {
-    if(playersList[numb] == experiencedPlayers)
+    if sharkTeam.capacity <= numberOfTeams
     {
-        playersList.append(["Team" : "Sharks"])
+        sharkTeam.append(experiencedPlayers)
     }
 }
 
