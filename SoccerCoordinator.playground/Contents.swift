@@ -151,26 +151,18 @@ for numb in rookiePlayers
         raptorsTeam.append(numb)
     }
 }
-//ENVIAR FORMULARIO
-let dragonPractiseTime : [String : String] = ["team" : "Team Dragons","date" : "March 17, 1PM"]
+//SENDING LETTER
 let sharkPractiseTime : [String : String] = ["team" : "Team Sharks","date" : "March 17, 3PM"]
 let raptorsPractiseTime : [String : String] = ["team" : "Team Raptors","date" : "March 18, 1PM"]
+let dragonPractiseTime : [String : String] = ["team" : "Team Dragons","date" : "March 17, 1PM"]
 
-var letter: [String] = []
+func createLetter(for team: [String: Any], on date: [String: String])
+{
+    let letter = "Hello \(team["GuardianName"]!)!\n We are glad to let you know that \(team["Name"]!) has been accepted to \(date["team"]!) team. It is recommended to attend the team practice on \(String(describing: date["date"]))!\n"
+    print(letter)
+}
+createLetter(for: sharkTeam, on: sharkPractiseTime)
+createLetter(for: raptorsTeam, on: raptorsPractiseTime)
+createLetter(for: dragonsTeam, on: dragonPractiseTime)
 
-for teamPlayer in dragonsTeam
-{
-   letter.append("Dear ,\(String(describing: teamPlayer["GuardianName"])), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(String(describing: dragonPractiseTime["team"])), and he will have practise on, \(String(describing: dragonPractiseTime["date"])),")
-}
-for teamPlayer in sharkTeam
-{
-    letter.append("Dear ,\(String(describing: teamPlayer["GuardianName"])), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(String(describing: sharkPractiseTime["team"])), and he will have practise on, \(String(describing: sharkPractiseTime["date"])),")
-}
-for teamPlayer in raptorsTeam
-{
-    letter.append("Dear ,\(String(describing: teamPlayer["GuardianName"])), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["Name"]!), joined, \(String(describing: raptorsPractiseTime["team"])), and he will have practise on, \(String(describing: raptorsPractiseTime["date"])),")
-}
-for lette in letter
-{
-    print(lette)
-}
+
