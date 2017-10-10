@@ -2,6 +2,9 @@
 
 //DATABASE (Dictionaries)
 
+//[REVIEW] Always use lowercase names for everything other than type names, for example classes or structs
+//"Name" should be "name", "Height" should be "height" etc.
+//SoccerExperience is a poor name for a Bool key, use hasSoccerExperience or isExperienced instead
 let player1 : [String : Any] = ["Name" : "Joe Smith",
     "Height" : 42.4,
     "SoccerExperience" : true,
@@ -102,6 +105,7 @@ var dragonsTeam : [[String : Any]] = []
 var raptorsTeam : [[String : Any]] = []
 
 
+//[REVIEW] "numb" is a poor choice for a constant, use player instead to indicate that it is a player
 //ORGANISING PLAYERS
 for numb in playersList
 {
@@ -156,8 +160,11 @@ let sharkPractiseTime : [String : String] = ["team" : "Team Sharks","date" : "Ma
 let raptorsPractiseTime : [String : String] = ["team" : "Team Raptors","date" : "March 18, 1PM"]
 let dragonPractiseTime : [String : String] = ["team" : "Team Dragons","date" : "March 17, 1PM"]
 
+//[REVIEW] You want to create letters for all players in a team, so change the team: [String: Any] to players: [[String: Any]]
 func createLetter(for team: [String: Any], on date: [String: String])
 {
+    //[REVIEW] You should use a for loop here to loop through all players in a team
+    //[REVIEW] Force unwrapping optionals is bad!!! Use an if-let to unwrap the optionals, this also removes the Optional in your prints
     let letter = "Hello \(team["GuardianName"]!)!\n We are glad to let you know that \(team["Name"]!) has been accepted to \(date["team"]!) team. It is recommended to attend the team practice on \(String(describing: date["date"]))!\n"
     print(letter)
 }
