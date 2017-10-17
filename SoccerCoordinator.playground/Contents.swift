@@ -158,7 +158,7 @@ let dragonPractiseTime : [String : String] = ["team" : "Team Dragons","date" : "
 
 func createLetter(for team: [String: Any], on date: [String: String])
 {
-    let letter = "Hello \(team["GuardianName"]!)!\n We are glad to let you know that \(team["Name"]!) has been accepted to \(date["team"]!) team. It is recommended to attend the team practice on \(String(describing: date["date"]))!\n"
+    let letter = "Hello \(team["GuardianName"]!)!\n We are glad to let you know that \(team["Name"]!) has been accepted to \(date["team"]!) team. It is recommended to attend the team practice on \(date["date"]!)\n"
     print(letter)
 }
 createLetter(for: sharkTeam, on: sharkPractiseTime)
