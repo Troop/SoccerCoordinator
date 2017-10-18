@@ -2,78 +2,78 @@
 
 //DATABASE (Dictionaries)
 
-let player1 : [String : Any] = ["Name" : "Joe Smith",
+let player1 : [String : Any] = ["name" : "Joe Smith",
     "Height" : 42.4,
-    "SoccerExperience" : true,
-    "GuardianName" : "Jim and Jan Smith"]
-let player2 : [String : Any] = ["Name" : "Jill Tanner",
-    "Height" : 36,
-    "SoccerExperience" : true,
-    "GuardianName" : "Clara Tanner"]
-let player3 : [String : Any] = ["Name" : "Bill Bon",
-    "Height" : 43,
-    "SoccerExperience" : true,
-    "GuardianName" : "Sara and Jenny Bon"]
-let player4 : [String : Any] = ["Name" : "Eva Gordon",
-    "Height" : 45,
-    "SoccerExperience" : false,
-    "GuardianName" : "Wendy and Mike Gordon"]
-let player5 : [String : Any] = ["Name" : "Matt Gill",
-    "Height" : 40,
-    "SoccerExperience" : false,
-    "GuardianName" : "Charles and Sylvia Gill"]
-let player6 : [String: Any] = ["Name" : "Kimmy Stein",
-    "Height" : 41,
-    "SoccerExperience" : false,
-    "GuardianName" : "Bill and Hillary Stein"]
-let player7 : [String : Any] = ["Name" : "Sammy Adams",
-    "Height" : 45,
-    "SoccerExperience" : false,
-    "GuardianName" : "Jeff Adams"]
-let player8 : [String : Any] = ["Name" : "Karl Saygan",
-    "Height" : 42,
-    "SoccerExperience" : true,
-    "GuardianName" : "Heather Bledsoe"]
-let player9 : [String : Any] = ["Name" : "Suzane Greenberg",
-    "Height" : 44,
-    "SoccerExperience" : true,
-    "GuardianName" : "Henrietta Dumas"]
-let player10 : [String : Any] = ["Name" : "Sal Dali",
-    "Height" : 41,
-    "SoccerExperience" : false,
-    "GuardianName" : "Gala Dali"]
-let player11 : [String : Any] = ["Name" : "Joe Kavalier",
-    "Height" : 42,
-    "SoccerExperience" : false,
-    "GuardianName" : "Sam and Elaine Kavalier"]
-let player12 : [String : Any] = ["Name" : "Ben Finkelstein",
-    "Height" : 44,
-    "SoccerExperience" : false,
-    "GuardianName" : "Aaron and Jill Finkelstein"]
-let player13 : [String: Any] = ["Name" : "Diego Soto",
-    "Height" : 41,
-    "SoccerExperience" : true,
-    "GuardianName" : "Robin and Sarika Soto"]
-let player14 : [String : Any] = ["Name" : "Chloe Alaska",
-    "Height" : 47,
-    "SoccerExperience" : false,
-    "GuardianName" : "David and Jamie Alaska"]
-let player15 : [String: Any] = ["Name" : "Arnold Willis",
-    "Height" : 43,
-    "SoccerExperience" : false,
-    "GuardianName" : "Claire Willis"]
-let player16 : [String: Any] = ["Name" : "Phillip Helm",
-    "Height" : 44,
-    "SoccerExperience" : true,
-    "GuardianName" : "Thomas Helm and Eva Jones"]
-let player17 : [String: Any] = ["Name" : "Les Clay",
-    "Height" : 42,
-    "SoccerExperience" : true,
-    "GuardianName" : "Wynonna Brown"]
-let player18 : [String: Any] = ["Name" : "Herschel Krustofski",
-    "Height" : 45,
-    "SoccerExperience" : true,
-    "GuardianName" : "Hyman and Rachel Krustofski"]
+    "soccerExperience" : true,
+    "guardianName" : "Jim and Jan Smith"]
+let player2 : [String : Any] = ["name" : "Jill Tanner",
+    "height" : 36,
+    "soccerExperience" : true,
+    "guardianName" : "Clara Tanner"]
+let player3 : [String : Any] = ["name" : "Bill Bon",
+    "height" : 43,
+    "soccerExperience" : true,
+    "guardianName" : "Sara and Jenny Bon"]
+let player4 : [String : Any] = ["name" : "Eva Gordon",
+    "height" : 45,
+    "soccerExperience" : false,
+    "guardianName" : "Wendy and Mike Gordon"]
+let player5 : [String : Any] = ["name" : "Matt Gill",
+    "height" : 40,
+    "soccerExperience" : false,
+    "guardianName" : "Charles and Sylvia Gill"]
+let player6 : [String: Any] = ["name" : "Kimmy Stein",
+    "height" : 41,
+    "soccerExperience" : false,
+    "guardianName" : "Bill and Hillary Stein"]
+let player7 : [String : Any] = ["name" : "Sammy Adams",
+    "height" : 45,
+    "soccerExperience" : false,
+    "guardianName" : "Jeff Adams"]
+let player8 : [String : Any] = ["name" : "Karl Saygan",
+    "height" : 42,
+    "soccerExperience" : true,
+    "guardianName" : "Heather Bledsoe"]
+let player9 : [String : Any] = ["name" : "Suzane Greenberg",
+    "height" : 44,
+    "soccerExperience" : true,
+    "guardianName" : "Henrietta Dumas"]
+let player10 : [String : Any] = ["name" : "Sal Dali",
+    "height" : 41,
+    "soccerExperience" : false,
+    "guardianName" : "Gala Dali"]
+let player11 : [String : Any] = ["name" : "Joe Kavalier",
+    "height" : 42,
+    "soccerExperience" : false,
+    "guardianName" : "Sam and Elaine Kavalier"]
+let player12 : [String : Any] = ["name" : "Ben Finkelstein",
+    "height" : 44,
+    "soccerExperience" : false,
+    "guardianName" : "Aaron and Jill Finkelstein"]
+let player13 : [String: Any] = ["name" : "Diego Soto",
+    "height" : 41,
+    "soccerExperience" : true,
+    "guardianName" : "Robin and Sarika Soto"]
+let player14 : [String : Any] = ["name" : "Chloe Alaska",
+    "height" : 47,
+    "soccerExperience" : false,
+    "guardianName" : "David and Jamie Alaska"]
+let player15 : [String: Any] = ["name" : "Arnold Willis",
+    "height" : 43,
+    "soccerExperience" : false,
+    "guardianName" : "Claire Willis"]
+let player16 : [String: Any] = ["name" : "Phillip Helm",
+    "height" : 44,
+    "soccerExperience" : true,
+    "guardianName" : "Thomas Helm and Eva Jones"]
+let player17 : [String: Any] = ["name" : "Les Clay",
+    "height" : 42,
+    "soccerExperience" : true,
+    "guardianName" : "Wynonna Brown"]
+let player18 : [String: Any] = ["name" : "Herschel Krustofski",
+    "height" : 45,
+    "soccerExperience" : true,
+    "guardianName" : "Hyman and Rachel Krustofski"]
 var playersList = [player1,
                    player2,
                    player3,
@@ -103,66 +103,76 @@ var raptorsTeam : [[String : Any]] = []
 
 
 //ORGANISING PLAYERS
-for numb in playersList
+for players in playersList
 {
 //Go through the Array finding matches with the "SoccerExperience" == true
-    let isExperenced: Bool = numb["SoccerExperience"] as! Bool
+    let isExperenced: Bool = players["soccerExperience"] as! Bool
     if isExperenced == true
     {
-        experiencedPlayers.append(numb)
+        experiencedPlayers.append(players)
         //Adding Team to PLayers
     }
     else
     {
-        rookiePlayers.append(numb)
+        rookiePlayers.append(players)
         //Function
     }
 }
 
 //ADDING EXPERIENCE PLAYERS
-for numb in experiencedPlayers
+for players in experiencedPlayers
 {
     if (sharkTeam.count < numberOfTeams)
     {
-        sharkTeam.append(numb)
+        sharkTeam.append(players)
     }
     else if(sharkTeam.count == numberOfTeams && dragonsTeam.count < numberOfTeams)
     {
-        dragonsTeam.append(numb)
+        dragonsTeam.append(players)
     }
     else
     {
-        raptorsTeam.append(numb)
+        raptorsTeam.append(players)
     }
 }
 //ADDING INEXPERIENCE PLAYERS
-for numb in rookiePlayers
+for players in rookiePlayers
 {
     if (sharkTeam.count < playersList.count/numberOfTeams)
     {
-        sharkTeam.append(numb)
+        sharkTeam.append(players)
     }
     else if(sharkTeam.count == playersList.count/numberOfTeams && dragonsTeam.count < playersList.count/numberOfTeams)
     {
-        dragonsTeam.append(numb)
+        dragonsTeam.append(players)
     }
     else
     {
-        raptorsTeam.append(numb)
+        raptorsTeam.append(players)
     }
 }
 //SENDING LETTER
-let sharkPractiseTime : [String : String] = ["team" : "Team Sharks","date" : "March 17, 3PM"]
-let raptorsPractiseTime : [String : String] = ["team" : "Team Raptors","date" : "March 18, 1PM"]
-let dragonPractiseTime : [String : String] = ["team" : "Team Dragons","date" : "March 17, 1PM"]
-
-func createLetter(for team: [String: Any], on date: [String: String])
+var letters: [String] = []
+for teamPlayer in dragonsTeam
 {
-    let letter = "Hello \(team["GuardianName"]!)!\n We are glad to let you know that \(team["Name"]!) has been accepted to \(date["team"]!) team. It is recommended to attend the team practice on \(date["date"]!)\n"
-    print(letter)
+    let dragonPractiseTime : [String : Any] = ["team" : "Team Dragons"
+        ,"date" : "March 17, 1PM"]
+    letters.append("Dear ,\(teamPlayer["guardianName"]!), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["name"]!), joined, \(dragonPractiseTime["team"]!) and practise will be on \(dragonPractiseTime["date"]!)")
 }
-createLetter(for: sharkTeam, on: sharkPractiseTime)
-createLetter(for: raptorsTeam, on: raptorsPractiseTime)
-createLetter(for: dragonsTeam, on: dragonPractiseTime)
+for teamPlayer in sharkTeam
+{
+    let sharkPractiseTime : [String : Any] = ["team": "Team Sharks", "date": "March 17, 3PM"]
+    letters.append("Dear ,\(teamPlayer["guardianName"]!), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["name"]!), joined, \(sharkPractiseTime["team"]!) and practise will be on \(sharkPractiseTime["date"]!)")
+}
+for teamPlayer in sharkTeam
+{
+    let raptorsPractiseTime : [String : Any] = ["team" : "Team Raptors","date" : "March 18, 1PM"]
+    letters.append("Dear ,\(teamPlayer["guardianName"]!), We are glad to comunicate you that your 'Little' Soccer Player, \(teamPlayer["name"]!), joined, \(raptorsPractiseTime["team"]!) and practise will be on \(raptorsPractiseTime["date"]!)")
+}
+for letter in letters
+{
+print(letter)
+}
+
 
 
